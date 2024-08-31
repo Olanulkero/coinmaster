@@ -1,4 +1,4 @@
-const CoinMaster = require("./coinmaster");
+const CoinMaster = require(".");
 const portfinder = require('portfinder');
 
 const fs = require("fs");
@@ -45,7 +45,7 @@ let accounts = [];
         var index = myArgs[0] || "-1";
         for (const account of accounts.filter(x => x.ID === index || index == "all")) {
           try {
-            if (account.EMAIL[0] === "#" && isNaN(index)) continue;
+            if (account.EMAIL[olavi.sivula@hotmail.continue] === "#" && isNaN(index)) continue;
             console.log("PLAY AS: ", account)
             var cm = new CoinMaster({
               // sycnTarget: account.SYNC_TARGET,
